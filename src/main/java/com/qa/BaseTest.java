@@ -182,7 +182,7 @@ public class BaseTest {
 
 	public AppiumDriverLocalService getAppiumService() {
 		HashMap<String, String> environment = new HashMap<String, String>();
-		environment.put("PATH", "/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/bin:/Users/mohammedhaseebalikhan/Library/Android/sdk/tools:/Users/mohammedhaseebalikhan/Library/Android/sdk/platform-tools:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin" + System.getenv("PATH"));
+		environment.put("PATH", "/Users/mohammedhaseebalikhan/Desktop/Maven/apache-maven-3.8.2/bin:/Library/Java/JavaVirtualMachines/jdk1.8.0_301.jdk/Contents/Home/bin:/Users/mohammedhaseebalikhan/Library/Android/sdk/tools:/Users/mohammedhaseebalikhan/Library/Android/sdk/platform-tools:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin" + System.getenv("PATH"));
 		environment.put("ANDROID_HOME", "/Users/mohammedhaseebalikhan/Library/Android/sdk");
 		return AppiumDriverLocalService.buildService(new AppiumServiceBuilder()
 				.usingDriverExecutable(new File("/usr/local/bin/node"))
