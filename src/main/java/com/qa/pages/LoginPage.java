@@ -23,14 +23,24 @@ public class LoginPage extends BaseTest {
 	@AndroidFindBy (xpath = "//android.view.ViewGroup[@content-desc=\"test-Error message\"]/android.widget.TextView") 
 	@iOSXCUITFindBy (xpath = "//XCUIElementTypeOther[@name=\"test-Error message\"]/child::XCUIElementTypeStaticText")
 	private MobileElement errTxt;
-	
-public LoginPage enterUserName(String username) {
+
+	/**
+	 *
+	 * @param username
+	 * @return
+	 */
+	public LoginPage enterUserName(String username) {
 	clear(usernameTxtFld);	
 	sendKeys(usernameTxtFld, username, "login with " + username);
 	return this;
 }
 
-public LoginPage enterPassword(String password) {
+	/**
+	 *
+	 * @param password
+	 * @return
+	 */
+	public LoginPage enterPassword(String password) {
 	clear(passwordTxtFld);
 	sendKeys(passwordTxtFld, password, "password is " + password);
 	return this;
